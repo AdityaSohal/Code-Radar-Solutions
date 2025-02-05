@@ -11,7 +11,7 @@
 #include <stdio.h>
 int main(){
     double f;
-    scanf("%d",&f);
-    printf("You entered: %d",f);
+    scanf("%lf",&f);
+    printf("You entered: %lf",f);
     return 0;
 }
