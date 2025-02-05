@@ -13,6 +13,6 @@ int main(){
     char ch[100];
     char st[100];
     scanf("%ch %ch",ch,st);
-    printf("You entered: %ch and %st");
+    printf("You entered: %c and %c",ch,st);
     return 0;
 }
