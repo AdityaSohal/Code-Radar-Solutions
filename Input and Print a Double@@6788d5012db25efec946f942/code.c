@@ -10,8 +10,8 @@
 // }
 #include <stdio.h>
 int main(){
-    float f;
-    scanf("%f",&f);
-    printf("You entered: %.4f",f);
+    double f;
+    scanf("%d",&f);
+    printf("You entered: %d",f);
     return 0;
 }
