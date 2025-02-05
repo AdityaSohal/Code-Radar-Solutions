@@ -1,12 +1,12 @@
 #include <stdio.h>
-int main(){
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(b*b==a){
-        printf("Yes");
+
+int main() {
+    int num1, num2;
+    scanf("%d %d", &num1, &num2);
+    if (num1 == num2 * num2) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
     }
-    else{
-        printf("No");
-    }
-    retrun 0;
+    return 0;
 }
