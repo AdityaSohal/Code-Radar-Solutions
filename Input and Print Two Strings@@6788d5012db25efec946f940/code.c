@@ -12,7 +12,7 @@
 int main(){
     char ch[100];
     char st[100];
-    scanf("%c %c",ch,st);
-    printf("You entered: %c and %c",ch,st);
+    scanf("%s %s",ch,st);
+    printf("You entered: %s and %s",ch,st);
     return 0;
 }
