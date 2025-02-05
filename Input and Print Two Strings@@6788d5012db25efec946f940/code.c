@@ -10,7 +10,8 @@
 // }
 #include <stdio.h>
 int main(){
-    char ch[100],st[100];
+    char ch[100];
+    char st[100];
     scanf("%ch %ch",ch,st);
     printf("You entered: %ch and %st");
     return 0;
