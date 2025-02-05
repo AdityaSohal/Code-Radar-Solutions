@@ -9,7 +9,7 @@ int main() {
                 printf("0 1");
             }
         } else {
-            printf("1 ");
+            printf(" 1 ");
             for (int j = 0; j < i / 2; ++j) {
                 printf("0 1");
             }
