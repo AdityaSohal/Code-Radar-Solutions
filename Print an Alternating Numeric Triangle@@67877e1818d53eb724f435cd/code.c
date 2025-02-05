@@ -11,7 +11,7 @@ int main() {
         } else {
             printf("1 ");
             for (int j = 0; j < i / 2; ++j) {
-                printf("01");
+                printf("0 1");
             }
         }
         printf("\n");
