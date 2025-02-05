@@ -1,12 +1,18 @@
 #include <stdio.h>
 int main() {
     int n;
-    scanf("%d", &n);  
-    for (int i = 1; i <= n; i++) {
-        int num = (i == 1) ? 1 : 0; 
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", num);
-            num = 1 - num;  
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; ++i) {
+        if (i % 2 == 0) {
+            for (int j = 0; j < i / 2; ++j) {
+                printf("01");
+            }
+        } else {
+            printf("1");
+            for (int j = 0; j < i / 2; ++j) {
+                printf("01");
+            }
         }
         printf("\n");
     }
