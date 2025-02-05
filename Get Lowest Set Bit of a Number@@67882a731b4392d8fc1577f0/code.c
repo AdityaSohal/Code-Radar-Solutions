@@ -21,8 +21,9 @@ int main() {
     scanf("%d", &num);
     int position = getLowestSetBitPosition(num);
     if (position == -1) {
+        printf("No set bits in the number.\n");
     } else {
-        printf("%d\n", position);
+        printf("The position of the lowest set bit is: %d\n", position);
     }
 
     return 0;
