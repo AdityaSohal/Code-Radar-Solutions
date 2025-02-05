@@ -2,15 +2,15 @@
 
 int main() {
     int num1, num2;
-    char operator;
-    scanf("%d %c %d", &num1, &operator, &num2);
-    if (operator == '+') {
+    char op;
+    scanf("%d %c %d", &num1, &op, &num2);
+    if (op == '+') {
         printf("%d\n", num1 + num2);
-    } else if (operator == '-') {
+    } else if (op == '-') {
         printf("%d\n", num1 - num2);
-    } else if (operator == '*') {
+    } else if (op == '*') {
         printf("%d\n", num1 * num2);
-    } else if (operator == '/') {
+    } else if (op == '/') {
         if (num2 != 0) {
             printf("%d\n", num1 / num2);
         } else {
