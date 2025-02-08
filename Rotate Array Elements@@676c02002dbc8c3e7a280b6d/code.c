@@ -31,6 +31,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         printf("%d ", rotated[i]);
     }
+    printf("\n");
     
     return 0;
 }
