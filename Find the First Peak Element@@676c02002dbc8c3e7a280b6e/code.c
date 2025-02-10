@@ -1,16 +1,20 @@
 #include <stdio.h>
 
 int main(){
-    int n;
-    scanf("%d",&n);
+    int N;
+    scanf("%d",&N);
     int arr[n];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
     int temp;
-    for(int i =0;i<n-1;i++){
-        if(arr[i]>arr[i+1])
-        temp= arr[i];
+    for(i = 0; i < N; i++) {
+        if((i == 0 && arr[i] > arr[i + 1]) || 
+           (i == N - 1 && arr[i] > arr[i - 1]) || 
+           (i > 0 && i < N - 1 && arr[i] > arr[i - 1] && arr[i] > arr[i + 1])) {
+            peak = arr[i];
+            break;
+        }
     }
     printf("%d",temp);
 }
