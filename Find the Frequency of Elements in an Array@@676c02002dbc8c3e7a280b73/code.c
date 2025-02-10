@@ -13,13 +13,13 @@ int main(){
         visited[i]=0;
     }
     for(int i=0;i<n;i++){
-        if(visited[i]==1)
+        if(visited[i]==1)continue;
         for(int j = i + 1; j < n; j++) {
             if(arr[i] == arr[j]) {
                 count++;
                 visited[j] = 1; 
             }
-        printf("%d %d\n",arr[i],count);
         }
+        printf("%d %d\n",arr[i],count);
     }
 }
