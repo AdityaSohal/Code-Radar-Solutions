@@ -19,7 +19,7 @@ int main(){
                 count++;
                 visited[j] = 1; 
             }
-        }
         printf("%d %d\n",arr[i],count);
+        }
     }
 }
