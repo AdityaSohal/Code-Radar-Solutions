@@ -16,5 +16,5 @@ int main(){
             break;
         }
     }
-    printf("%d",temp);
+    printf("%d",peak);
 }
