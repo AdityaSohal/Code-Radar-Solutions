@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int first = -1, second = -1;
-    for(i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         if(arr[i] > first) {
             second = first;
             first = arr[i];
