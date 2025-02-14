@@ -2,7 +2,7 @@
 #include <string.h>
 int main(){
 char str[100];
-scanf("%d",str);
+scanf("%s",str);
 int start=0;
 int end=strlen(str)-1;
 char temp;
