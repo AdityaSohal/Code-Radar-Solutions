@@ -11,7 +11,7 @@ int main()
         scanf("%d", &arr[i]);
     }
     scanf("%d", &n);
-    n = size % n;
+    n = n%size;
     int start = 0, end = size - 1;
     while (start < end)
     {
