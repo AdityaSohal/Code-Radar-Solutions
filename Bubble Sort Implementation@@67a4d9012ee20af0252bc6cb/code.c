@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-void bubblesort(int arr[], int n);  // Function prototype
-void printArray(int arr[], int n);  // Function prototype
+// Function prototypes
+void bubblesort(int arr[], int n);
+void printArray(int arr[], int n);
 
 int main()
 {
     int n;
+    printf("Enter the number of elements: ");
     scanf("%d", &n);  // Read size of array
-    int arr[n];  // Declare array with size n
 
+    int arr[n];  // Declare array with size n
+    printf("Enter the elements: ");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);  // Read array elements
     }
 
     bubblesort(arr, n);  // Call bubble sort
+    printf("Sorted array: ");
     printArray(arr, n);  // Print sorted array
 
     return 0;
