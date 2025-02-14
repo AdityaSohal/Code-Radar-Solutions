@@ -18,7 +18,7 @@ int main(){
         }
     }
 
-    if(second != -1)
-        printf("%d\n", second);
+    if(second != -1){
+        printf("%d\n", second);}
     return 0;
 }
