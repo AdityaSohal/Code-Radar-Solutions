@@ -15,7 +15,7 @@ for(int i=0;i<n;i++){
         iffound=1;
     } 
 }
-if(iffound!=1){
+if(!iffound){
     print("-1");
 }
     return 0;
