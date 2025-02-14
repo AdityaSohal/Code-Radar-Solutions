@@ -30,7 +30,7 @@ int main()
         start++;
         end--;
     }
-    int start = n, end = size - 1;
+    start = n, end = size - 1;
     while (start < end)
     {
         int temp = arr[start];
