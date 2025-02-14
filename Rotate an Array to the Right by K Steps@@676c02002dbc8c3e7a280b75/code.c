@@ -21,7 +21,7 @@ int main()
         start++;
         end--;
     }
-    start = 0, end =n -1;
+    start = 0, end = n-1;
     while (start < end)
     {
         int temp = arr[start];
