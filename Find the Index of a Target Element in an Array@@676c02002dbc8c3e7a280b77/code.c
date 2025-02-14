@@ -13,9 +13,10 @@ for(int i=0;i<n;i++){
     if(arr[i]==k){
         print("%d",i);
         iffound=1;
+        break;
     } 
 }
-if(!iffound){
+if(! iffound){
     print("-1");
 }
     return 0;
