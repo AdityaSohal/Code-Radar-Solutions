@@ -8,13 +8,15 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&k);
+    int iffound =0;
 for(int i=0;i<n;i++){
     if(arr[i]==k){
         print("%d",i);
-    }
-    else{
-        print("-1");
-    }
+        iffound=1;
+    } 
+}
+if(iffound!=1){
+    print("-1");
 }
     return 0;
 }
