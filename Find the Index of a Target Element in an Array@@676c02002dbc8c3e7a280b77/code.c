@@ -11,13 +11,13 @@ int main(){
     int iffound =0;
 for(int i=0;i<n;i++){
     if(arr[i]==k){
-        print("%d",i);
+        printf("%d",i);
         iffound=1;
         break;
     } 
 }
 if(! iffound){
-    print("-1");
+    printf("-1");
 }
     return 0;
 }
