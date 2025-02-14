@@ -13,12 +13,12 @@ int main(){
         if(arr[i] > first) {
             second = first;
             first = arr[i];
-        } else if(arr[i] > second && arr[i] != first) {
+        } else if(arr[i] < first && arr[i] > second) {
             second = arr[i];
         }
     }
 
-    if(second != -1){
-        printf("%d\n", second);}
+    
+        printf("%d\n", second);
     return 0;
 }
