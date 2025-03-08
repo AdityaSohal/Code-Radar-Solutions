@@ -19,7 +19,7 @@ int main() {
     printf("Books above price %.2f: \n",thresh);
     for(int i =0;i<n;i++){
         if(book[i].price>thresh){
-         printf("%s %s %.2f", book[i].name, book[i].author, &book[i].price);
+         printf("%s %s %.2f", book[i].name, book[i].author, book[i].price);
         }
     }
 
