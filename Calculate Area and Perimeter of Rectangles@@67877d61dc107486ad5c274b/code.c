@@ -17,5 +17,5 @@ int main(){
     for(int i=0;i<n;i++){
         scnaf("%f %f",&react[i].length, &react[i].bredth);
     }
-    calculateareaandperimenter(react,n)
+    calculateareaandperimenter(react,n);
 }
