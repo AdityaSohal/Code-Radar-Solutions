@@ -6,7 +6,7 @@ struct Weekdays{
 int main(){
     float sum=0.0;
     float avg;
-    struct Weekdays days[];
+    struct Weekdays days[7];
     for(int i =0;i<7;i++){
         scanf("%s %f", days[i].day, &days[i].temp);
     }
