@@ -16,7 +16,7 @@ int main() {
     }
     float highest = students[0].marks;
     for(int i =0;i<n;i++){
-        if(students[i]marks>highest){
+        if(students[i].marks>highest){
             highest= students[i].marks;
         }
     }
