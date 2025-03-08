@@ -12,7 +12,7 @@ void calculateareaandperimenter(struct Rectangle react[],int n){
 }
 int main(){
     int n;
-    scnaf("%d",&n);
+    scanf("%d",&n);
     struct Rectangle react[n];
     for(int i=0;i<n;i++){
         scnaf("%f %f",&react[i].length, &react[i].bredth);
