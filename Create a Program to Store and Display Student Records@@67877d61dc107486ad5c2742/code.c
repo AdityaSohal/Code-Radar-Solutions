@@ -9,10 +9,10 @@ int main(){
     scanf("%d",n);
     struct student students[n];
     for(int i =0;i<n;i++){
-        scanf("%d %s %f", &student[i].rollno, student[i].name, &student[i].marks);
+        scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
     }
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, Name: %s, marks: %.2f", student[i].rollno, student[i].name, student[i].marks);
+        printf("Roll Number: %d, Name: %s, marks: %.2f", students[i].rollno, students[i].name, students[i].marks);
     }
     return 0;
 }
