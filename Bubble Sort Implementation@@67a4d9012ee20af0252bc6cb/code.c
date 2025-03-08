@@ -14,7 +14,7 @@ void bubblesort(int arr[], int n) {
 
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%d", arr[i]);
+        printf("%d ", arr[i]);  
     }
     printf("\n");
 }
@@ -22,11 +22,19 @@ void printArray(int arr[], int n) {
 int main() {
     int n;
     scanf("%d", &n);
-    int arr[n];
+    
+    if (n <= 0) {  
+        printf("Invalid array size\n");
+        return 1;
+    }
+    
+    int arr[n];  
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+
     bubblesort(arr, n);  
     printArray(arr, n);  
+
     return 0;
 }
