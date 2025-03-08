@@ -8,7 +8,7 @@ struct Book{
 
 int main(){
     int n;
-    scanf("%d",n);
+    scanf("%d",&n);
     float threshold;
     struct Book books[n];
 
