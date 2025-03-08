@@ -12,7 +12,7 @@ int main(){
         scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
     }
     for(int i=0;i<n;i++){
-        sum +=students[i].marks
+        sum +=students[i].marks;
        avgmarks=sum/n;
     }
     printf("Average Marks: %.2f",avgmarks);
