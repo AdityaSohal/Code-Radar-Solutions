@@ -12,6 +12,6 @@ int main(){
         scanf("%d %s %f", &student[i].rollno, student[i],name , student[i].marks);
     }
     for(int i =0;i<n;i++){
-        printf("printf("Roll Number:\n%d,\nName :\n%s,\nMarks :\n%.2f\n", students[i].rollno, students[i].name, students[i].marks);")
+        printf("Roll Number:\n%d,\nName :\n%s,\nMarks :\n%.2f\n", students[i].rollno, students[i].name, students[i].marks);
     }
 }
