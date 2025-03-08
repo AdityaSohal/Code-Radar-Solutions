@@ -1,17 +1,23 @@
 #include <stdio.h>
-struct student{
+
+struct Student {
     int rollno;
     char name[50];
     float marks;
 };
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
-    struct student[n];
-    for(int i =0;i<n;i++){
-        scanf("%d %s %f", &student[i].rollno, student[i],name , student[i].marks);
+    scanf("%d", &n);
+    struct Student students[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
     }
-    for(int i =0;i<n;i++){
+
+    for (int i = 0; i < n; i++) {
         printf("Roll Number:\n%d,\nName :\n%s,\nMarks :\n%.2f\n", students[i].rollno, students[i].name, students[i].marks);
     }
+
+    return 0;
 }
