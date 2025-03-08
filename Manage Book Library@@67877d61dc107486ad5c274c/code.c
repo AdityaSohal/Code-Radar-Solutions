@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct Library {;
+    char name[50];
+    char author[50];
+    float price;
+};
+
+int main() {
+    int n;
+    float thresh;
+    scanf("%d", &n);
+    struct Library book[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%s %s %f", book[i].name, students[i].author, &students[i].price);
+    }
+    scanf("%f", &thresh);
+    printf("Books above price %.2f: ",thresh);
+    for(int i =0;i<n;i++){
+        if(students[i].marks>thresh){
+         printf("%s %s %f", book[i].name, students[i].author, &students[i].price);
+        }
+    }
+
+
+    return 0;
+}
