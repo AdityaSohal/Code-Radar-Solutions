@@ -15,7 +15,7 @@ int main(){
     scanf("%d",&s);
     int found =0;
     for(int i=0;i<n;i++){
-        if(n==s){
+        if(students[i].rollno==s){
        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rollno, students[i].name, students[i].marks);
             found = 1; 
             break; 
