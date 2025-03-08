@@ -8,6 +8,7 @@ struct Student {
 
 int main() {
     int n;
+    int index;
     scanf("%d", &n);
     struct Student students[n];
 
@@ -18,9 +19,10 @@ int main() {
     for(int i =0;i<n;i++){
         if(students[i].marks>highest){
             highest= students[i].marks;
+            index=i;
         }
     }
-    printf("Top scorer: %d",highest);
+     printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n", students[index].rollno, students[index].name, students[index].marks);
 
     return 0;
 }
