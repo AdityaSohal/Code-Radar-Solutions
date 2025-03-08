@@ -22,7 +22,7 @@ int main() {
             count++;
         }
     }
-    printf("Counf of students scoring above %f: %d",thresh,count);
+    printf("Counf of students scoring above %.2f: %d",thresh,count);
 
 
     return 0;
