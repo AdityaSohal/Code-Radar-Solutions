@@ -18,7 +18,7 @@ int main() {
     scanf("%f", &thresh);
     printf("Books above price %.2f: ",thresh);
     for(int i =0;i<n;i++){
-        if(students[i].marks>thresh){
+        if(book[i].price>thresh){
          printf("%s %s %f", book[i].name, book[i].author, &book[i].price);
         }
     }
