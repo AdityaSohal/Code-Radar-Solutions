@@ -16,15 +16,11 @@ int main() {
     float carToll = 0, truckToll = 0, bikeToll = 0;
     for (int i = 0; i < n; i++) {
         scanf("%s %s %f", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
-
-        // Convert type to lowercase (if necessary)
         for (int j = 0; vehicles[i].type[j]; j++) {
             if (vehicles[i].type[j] >= 'A' && vehicles[i].type[j] <= 'Z') {
-                vehicles[i].type[j] += 32; // Convert uppercase to lowercase
+                vehicles[i].type[j] += 32; 
             }
         }
-
-        // Compare with lowercase values
         if (strcmp(vehicles[i].type, "car") == 0) {
             carToll += vehicles[i].toll;
         } else if (strcmp(vehicles[i].type, "truck") == 0) {
