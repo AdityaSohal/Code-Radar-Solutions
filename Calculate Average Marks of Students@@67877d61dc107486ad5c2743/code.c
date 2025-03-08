@@ -2,7 +2,7 @@
 struct student{
 int rollno;
 char name[50];
-float marks,avgmarks,sum;
+float marks,avgmarks,sum=0.0;
 };
 int main(){
     int n;
@@ -12,7 +12,7 @@ int main(){
         scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
     }
     for(int i=0;i<n;i++){
-        sum +=students[i].marks;
+        sum = sum+students[i].marks;
     }
        avgmarks=sum/n;
     printf("Average Marks: %.2f",avgmarks);
