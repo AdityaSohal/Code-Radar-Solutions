@@ -6,7 +6,8 @@ float marks;
 };
 int main(){
     int n;
-    float ,avgmarks,sum=0.0;
+    float sum=0.0;
+    float avgmarks;
     scanf("%d",&n);
     struct student students[n];
     for(int i =0;i<n;i++){
