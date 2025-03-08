@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct Library {;
+struct Library {
     char name[50];
     char author[50];
     float price;
@@ -12,17 +12,21 @@ int main() {
     scanf("%d", &n);
     struct Library book[n];
 
+    // Input book details
     for (int i = 0; i < n; i++) {
         scanf("%s %s %f", book[i].name, book[i].author, &book[i].price);
     }
+    
+    // Input threshold price
     scanf("%f", &thresh);
-    printf("Books above price %.2f: \n",thresh);
-    for(int i =0;i<n;i++){
-        if(book[i].price>thresh){
-         printf("%s %s %.2f", book[i].name, book[i].author, book[i].price);
+
+    // Print books above threshold price
+    printf("Books above price %.2f:\n", thresh);
+    for (int i = 0; i < n; i++) {
+        if (book[i].price > thresh) {
+            printf("%s %s %.2f\n", book[i].name, book[i].author, book[i].price);
         }
     }
-
 
     return 0;
 }
