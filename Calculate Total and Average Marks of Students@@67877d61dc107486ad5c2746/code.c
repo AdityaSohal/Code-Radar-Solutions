@@ -16,8 +16,8 @@ int main(){
     for(int i=0;i<n;i++){
         sum += students[i].marks;
     }
-       avgmarks=sum/n;
-       printf("Total Marks: %2.f\n", sum);
+    avgmarks=sum/n;
+    printf("Total Marks: %2.f\n",sum);
     printf("Average Marks: %.2f",avgmarks);
     return 0;
 }
