@@ -3,8 +3,13 @@
 struct Student {
     int rollno;
     char name[50];
-    char grades[1];
+    float marks;
 };
+char getgrades(float marks){
+    if(marks>= 86) return 'A';
+    else if(marks>=70) return 'B';
+    else return 'C';
+}
 
 int main() {
     int n;
@@ -12,11 +17,13 @@ int main() {
     struct Student students[n];
 
     for (int i = 0; i < n; i++) {
-        scanf("%d %s %s", &students[i].rollno, students[i].name, students[i].grades);
+        scanf("%d %s %f", &students[i].rollno, students[i].name, &students[i].marks);
     }
+    
 
     for (int i = 0; i < n; i++) {
-        printf("Roll Number: %d, Name: %s, Grades: %s\n", students[i].rollno, students[i].name, students[i].grades);
+        char grade = getgrades(students[i].marks);
+        printf("Roll Number: %d, Name: %s, Grades: %c\n", students[i].rollno, students[i].name, grade);
     }
 
     return 0;
